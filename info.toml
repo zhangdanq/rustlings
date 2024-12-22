@@ -168,3 +168,24 @@ name = "if3"
 dir = "03_if"
 hint = """请考虑`在Rust中每个条件块需要返回 相同类型 的值`这一点来修改代码哦。"""
 
+[[exercises]]
+name = "quiz1"
+dir = "quizzes"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "quiz2"
+dir = "quizzes"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "quiz3"
+dir = "quizzes"
+hint = """要解决这个练习，特性（trait）知识，特别是特性边界语法知识是必不可少的。
+https://doc.rust-lang.org/stable/book/ch10-02-traits.html#using-trait-bounds-to-conditionally-implement-methods
+以下是在实现块中指定特性边界的方法:
+`impl<T: Trait1 + Trait2 + …> for Foo<T> { … }`
+可能需要`use std::fmt::Display;`。"""
+
