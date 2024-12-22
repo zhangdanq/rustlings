@@ -189,3 +189,47 @@ https://doc.rust-lang.org/stable/book/ch10-02-traits.html#using-trait-bounds-to-
 `impl<T: Trait1 + Trait2 + …> for Foo<T> { … }`
 可能需要`use std::fmt::Display;`。"""
 
+[[exercises]]
+name = "primitive_types1"
+dir = "04_primitive_types"
+test = false
+hint = """将运算符`!`置于布尔值之前，可以去否布尔值。
+例如: `!true == false`
+这也可以用值为false的布尔型变量。"""
+
+[[exercises]]
+name = "primitive_types2"
+dir = "04_primitive_types"
+test = false
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "primitive_types3"
+dir = "04_primitive_types"
+test = false
+hint = """在Rust中，有一种以特定大小初始化数组的便捷方法:
+`let nums = [6; 99999];`
+这是一个长度为99999的数组，每个元素都是6。
+什么？你说你这样也可以: `let nums = [6, 6, 6, ..., 6, 6];`
+你是个狠人...
+"""
+
+[[exercises]]
+name = "primitive_types4"
+dir = "04_primitive_types"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "primitive_types5"
+dir = "04_primitive_types"
+test = false
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "primitive_types6"
+dir = "04_primitive_types"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
