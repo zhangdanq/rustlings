@@ -149,20 +149,22 @@ hint = """Rust区分表达式和语句。
 仔细看看`square`函数的代码吧。"""
 
 [[exercises]]
-# Exercise name which is the exercise file name without the `.rs` extension.
 name = "if1"
 dir = "03_if"
-hint = """一行で行いたい処理を実装することも可能です。\n\n他の言語で言うと\n・C++ならa > b ? a : b\n・Pythonならa if a > b else b\nRustにおいて覚えておくべきことは、\n・if文の条件は丸括弧などで囲む必要はないこと\n・if/elseは式であること\n・条件式の後には{}ブロックが続くこと"""
+hint = """你也可以用一行代码来实现想要执行的操作哦。
+在Rust语言里需要记住以下几点:
+- `if` 语句的条件是不需要用圆括号之类的符号括起来的。
+- `if` 和 `else` 是表达式。
+- 在条件表达式后面通常会跟着 `{}` 代码块。 """
 
 [[exercises]]
-# Exercise name which is the exercise file name without the `.rs` extension.
 name = "if2"
 dir = "03_if"
-hint = """最初のコンパイルエラーについては「Rustでは各条件ブロックで同じ型を返すことが重要である」という点に配慮してコードを修正してください。\nテストを合格させるには異なる入力値をチェックする条件が必要です。テストで何を期待しているかについてはテストを読んでください。"""
+hint = """请考虑`在Rust中每个条件块需要返回 相同类型 的值`这一点来修改代码哦。
+关于测试期望的内容，请阅读测试用例中`传入了什么，期待返回什么`。"""
 
 [[exercises]]
-# Exercise name which is the exercise file name without the `.rs` extension.
 name = "if3"
 dir = "03_if"
-hint = """Rustではifの全てのアームが同じ型の値を返す必要があります。\n全てのアームが同じ型で一貫していることを確認してください。"""
+hint = """请考虑`在Rust中每个条件块需要返回 相同类型 的值`这一点来修改代码哦。"""
 
