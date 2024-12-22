@@ -112,3 +112,39 @@ hint = """到目前为止，我们已经了解了变量和可变性相关的知�
 值得注意的是，常量的类型在代码中总是需要明确地进行声明。
 关于变量和常量的区别，在 The Rust Book 中有详细讲解：
 https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants"""
+
+[[exercises]]
+name = "functions1"
+dir = "02_functions"
+test = false
+hint = """在`main`函数内调用了`call_me`函数，然而该函数在代码中并不存在。
+而且代码推测这个函数不需要参数，也没有返回值，这和`main`函数挺相似的呢。"""
+
+[[exercises]]
+name = "functions2"
+dir = "02_functions"
+test = false
+hint = """在Rust中，函数的签名(用来描述函数输入输出的部分)里类型声明是必需的。
+对于`call_me`函数来说，它缺少了什么呢？"""
+
+[[exercises]]
+name = "functions3"
+dir = "02_functions"
+test = false
+hint = """函数的声明本身没有问题，不过函数的调用方式似乎存在问题。"""
+
+[[exercises]]
+name = "functions4"
+dir = "02_functions"
+test = false
+hint = """错误消息指出在`sale_price`函数中 “->” 之后没有写明返回值的类型。参考一下`is_even`函数吧。"""
+
+[[exercises]]
+name = "functions5"
+dir = "02_functions"
+test = false
+hint = """Rust区分表达式和语句。
+表达式返回与操作对象对应的值，语句仅返回`()`空空如也。
+`square`函数应该返回`i32`，但是却返回了`()`。
+仔细看看`square`函数的代码吧。"""
+
