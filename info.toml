@@ -233,3 +233,21 @@ name = "primitive_types6"
 dir = "04_primitive_types"
 hint = """此练习还暂无提示哦
 (需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "vecs1"
+dir = "05_vecs"
+hint = """在Rust中，有两种定义动态数组(vector)的方法:
+1. 使用 `Vec::new()` 函数 创建一个新的动态数组，然后通过 `push` 方法向其中添加元素。
+2. 使用 `vec![]` 宏 定义并初始化元素(如果知道初始值，使用这个方法会更简单)。
+
+更多详细信息，请参考The Rust Book:
+https://doc.rust-lang.org/stable/book/ch08-01-vectors.html """
+
+[[exercises]]
+name = "vecs2"
+dir = "05_vecs"
+hint = """在第一个函数中，先创建了一个空的动态数组，然后向其中添加(push)元素。
+在第二个函数中，对输入的值进行映射(map)，然后将结果收集(collect)到动态数组中。
+请尝试编写这两个函数，看看你更喜欢哪种方法。
+顺便一提，我更喜欢第二种方式，因为我觉得它更rusty，更优雅 ;) """
