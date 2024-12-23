@@ -251,3 +251,36 @@ hint = """在第一个函数中，先创建了一个空的动态数组，然后�
 在第二个函数中，对输入的值进行映射(map)，然后将结果收集(collect)到动态数组中。
 请尝试编写这两个函数，看看你更喜欢哪种方法。
 顺便一提，我更喜欢第二种方式，因为我觉得它更rusty，更优雅 ;) """
+
+[[exercises]]
+name = "move_semantics1"
+dir = "06_move_semantics"
+hint = """向`vec`推送元素意味着要改变它，但默认所有变量是不可变的，所以要想解决这个问题， 我们应该怎么声明`vec`呢？"""
+
+[[exercises]]
+name = "move_semantics2"
+dir = "06_move_semantics"
+hint = """在初次运行这个练习的时候，你有没有注意到有`对已移动的值进行借用`这样的错误呢？
+在Rust中，当参数被传递给函数，并且其值没有被显式返回时，原来的变量就无法再被使用了。
+也就是说，当把`vec0`传递给`fill_vec`时，所有权会转移到`vec1`那里，所以就没办法再访问`vec0`了。
+如果想要解决这个问题的话，就需要创建`vec0`的克隆，然后将这个克隆传递给`fill_vec`。 """
+
+[[exercises]]
+name = "move_semantics3"
+dir = "06_move_semantics"
+hint = """与之前的练习的区别在于，`fill_vec`函数开头处原有的`let mut vec = vec`这部分内容消失了。
+取而代之的是，在已有数组进行初始定义的时候添加`mut`关键字吧。"""
+
+[[exercises]]
+name = "move_semantics4"
+dir = "06_move_semantics"
+hint = """请仔细考虑可变引用的作用域范围。当获取可变引用时修改`x`的值会有什么作用呢？
+关于可变变量的引用，请参考The Rust Book:
+https://doc.rust-lang.org/stable/book/ch04-02-references-and-borrowing.html """
+
+[[exercises]]
+name = "move_semantics5"
+dir = "06_move_semantics"
+test = false
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
