@@ -284,3 +284,28 @@ dir = "06_move_semantics"
 test = false
 hint = """此练习还暂无提示哦
 (需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "structs1"
+dir = "07_structs"
+hint = """Rust中有三种结构体，每种结构体都用于将相关数据组合在一起。
+常规结构体存储`数据`以及`数据对应的名称`，这些被称为`字段`(fields)。
+元组结构体就像是有名字的元组，每个字段没有独特的名称。
+单元样结构体没有字段，作为泛型使用时较为方便。
+在这个练习题中，需要实现所有类型的结构体，请参考  The Rust Book
+https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html """
+
+[[exercises]]
+name = "structs2"
+dir = "07_structs"
+hint = """创建结构体的实例很简单，只需给定每个字段即可。
+此外，在进行实例化时还有一些快捷的方式，详情请查看The Rust Book:
+https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax """
+
+[[exercises]]
+name = "structs3"
+dir = "07_structs"
+hint = """在`is_international`函数中，可能需要确认包裹的目的地、出发地或者运输过程中涉及的国家等信息来判断是否为国际包裹，经停地看起来确实可能相关。
+在`get_fees`函数中，需要额外的参数，而`Package`结构体中可能需要包含与包裹重量、尺寸、运输类型（是否加急等）、目的地等相关的字段，这些信息会影响费用的计算。
+如果想详细了解方法的实现，可以查看The Rust Book:
+https://doc.rust-lang.org/stable/book/ch05-03-method-syntax.html 。"""
