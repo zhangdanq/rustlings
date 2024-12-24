@@ -405,3 +405,26 @@ https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#adding-a-key-and-va
 确保当给定的键已经存在时，能够根据已设置的值进行更新。
 更多详细信息，请参考The Rust Book:
 https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value"""
+
+[[exercises]]
+name = "options1"
+dir = "12_options"
+hint = """Option类型可以拥有Some值及其内部的值，也可以是内部值为None的类型。有多种获取内部值的方法，可以使用`unwrap`或者模式匹配。
+使用unwrap虽然简单，但是如果出现问题就会导致程序崩溃(panic)，那么为了不让程序强制退出应该怎么做呢?"""
+
+[[exercises]]
+name = "options2"
+dir = "12_options"
+hint = """请参考以下示例:
+- https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html 
+- https://doc.rust-lang.org/rust-by-example/flow_control/while_let.html 
+切记，Option类型可以嵌套在`if let`和`while let`语句中。
+例如，“if let Some(Some(x)) = y”，也可以参考Option::flatten。"""
+
+[[exercises]]
+name = "options3"
+dir = "12_options"
+test = false
+hint = """编译器提示发生了部分所有权的转移，让我们看看编译器的错误提示吧。
+按照编译器的指示进行修正后，请阅读相关文档:
+https://doc.rust-lang.org/std/keyword.ref.html"""
