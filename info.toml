@@ -329,3 +329,54 @@ name = "enums3"
 dir = "08_enums"
 hint = """第一步，先定义枚举类型，确保不会出现错误。
 接下来，在 `process()` 函数中创建 `match` 表达式。请注意，为了获取枚举中的值，需要使用 `match` 表达式进行解构。"""
+
+[[exercises]]
+name = "strings1"
+dir = "09_strings"
+test = false
+hint = """`current_favorite_color` 函数返回的是具有 `static`(静态)生命周期的切片。
+由于字符串数据是嵌入在代码中的，所以只要代码在运行，该数据就会一直存在。
+虽然，字符串切片与 `String` 类型是不同的，但可以通过使用 `From` 进行类型转换。 """
+
+[[exercises]]
+name = "strings2"
+dir = "09_strings"
+test = false
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "strings3"
+dir = "09_strings"
+hint = """字符串的标准库中有一些很方便的功能:
+https://doc.rust-lang.org/std/string/struct.String.html#method.trim
+`compose_me`: 可以使用`format!`宏，或者将字符串切片转换为拥有所有权的字符串，关于可以自由扩展的`replace_me`，请参考`replace`方法:
+https://doc.rust-lang.org/std/string/struct.String.html#method.replace"""
+
+[[exercises]]
+name = "strings4"
+dir = "09_strings"
+test = false
+hint = """请将 `main` 函数中的 `placeholder` 替换为 `string` 或 `string_slice` 函数。
+例如，`placeholder("blue");` 应该替换为 `string_slice("blue");`。
+因为 `"blue"` 部分是 `&str` 类型。"""
+
+[[exercises]]
+name = "modules1"
+dir = "10_modules"
+test = false
+hint = """在Rust中，默认情况下大多数东西都是私有访问的。不过，可以用`pub`关键字使其可公开使用 """
+
+[[exercises]]
+name = "modules2"
+dir = "10_modules"
+test = false
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "modules3"
+dir = "10_modules"
+test = false
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
