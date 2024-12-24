@@ -380,3 +380,28 @@ dir = "10_modules"
 test = false
 hint = """此练习还暂无提示哦
 (需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "hashmaps1"
+dir = "11_hashmaps"
+hint = """水果的数量至少要有5个，而且必须放入至少3种水果。"""
+
+[[exercises]]
+name = "hashmaps2"
+dir = "11_hashmaps"
+hint = """我们使用哈希表的`entry`和`or_insert`方法。
+有关详细信息，请参阅The Rust Book:
+https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#adding-a-key-and-value-only-if-a-key-isnt-present"""
+
+[[exercises]]
+name = "hashmaps3"
+dir = "11_hashmaps"
+hint = """提示1:
+使用哈希表的`entry`和`or_insert`(或 `or_insert_with`)方法，在球队不存在于表格中时插入`TeamScores`的默认值。
+更多详细信息，请参考The Rust Book:
+https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#adding-a-key-and-value-only-if-a-key-isnt-present
+
+提示2:
+确保当给定的键已经存在时，能够根据已设置的值进行更新。
+更多详细信息，请参考The Rust Book:
+https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value"""
