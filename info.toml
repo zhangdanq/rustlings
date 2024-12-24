@@ -520,3 +520,25 @@ dir = "15_traits"
 hint = """要约束参数实现了多个特征，可以使用 `+` 语法。请尝试将 `???` 替换为 `impl [这里填入第一个特征名称] + [这里填入第二个特征名称]`。
 The Rust Book的相应章节:
 https://doc.rust-lang.org/stable/book/ch10-02-traits.html#specifying-multiple-trait-bounds-with-the--syntax"""
+
+[[exercises]]
+name = "lifetimes1"
+dir = "16_lifetimes"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "lifetimes2"
+dir = "16_lifetimes"
+test = false
+hint = """请注意，生命周期 `a` 实际等同于 `x` 和 `y` 中较小那一方的具体生命周期。
+为了在保留内部块的情况下获得符合预期的结果，有两种方法:
+1. 移动`string2`的声明语句，使其与`string1`具有相同的长度生命周期(那么`result`会是如何声明的呢?)
+2. 将`println!`语句移到内部块中。 """
+
+[[exercises]]
+name = "lifetimes3"
+dir = "16_lifetimes"
+test = false
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
