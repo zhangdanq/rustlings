@@ -488,3 +488,35 @@ name = "generics2"
 dir = "14_generics"
 hint = """此练习还暂无提示哦
 (需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "traits1"
+dir = "15_traits"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "traits2"
+dir = "15_traits"
+hint = """请注意，特征获取了`self`的所有权，并将`Self`作为返回值。
+在特征中，`append_bar`的函数签名将`self`作为参数来接收，但在具体实现时，可以改为接收 `mut self`。这是因为无论如何值都是被拥有的，所以这样做是可行的。 """
+
+[[exercises]]
+name = "traits3"
+dir = "15_traits"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "traits4"
+dir = "15_traits"
+hint = """可以使用特征(trait)来代替具体类型的参数。请尝试将 `???` 替换为 `impl [这里应该填入什么?]`。
+The Rust Book的相应章节:
+https://doc.rust-lang.org/stable/book/ch10-02-traits.html#traits-as-parameters"""
+
+[[exercises]]
+name = "traits5"
+dir = "15_traits"
+hint = """要约束参数实现了多个特征，可以使用 `+` 语法。请尝试将 `???` 替换为 `impl [这里填入第一个特征名称] + [这里填入第二个特征名称]`。
+The Rust Book的相应章节:
+https://doc.rust-lang.org/stable/book/ch10-02-traits.html#specifying-multiple-trait-bounds-with-the--syntax"""
