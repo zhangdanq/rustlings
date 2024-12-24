@@ -474,3 +474,17 @@ hint = """在这个练习中，我们将使用前一个练习中使用过的 `Po
 请在 `parse` 的 `Result` 上尝试同样的操作。使用 `?` 运算符可以提前 `return` 的位置。
 关于 `map_err`，请参考 The Rust Book:
 https://doc.rust-lang.org/std/result/enum.Result.html#method.map_err """
+
+[[exercises]]
+name = "generics1"
+dir = "14_generics"
+test = false
+hint = """Rust的动态数组利用泛型创建了能容纳任意类型、具有动态大小的数组。
+如果有一个名为 `numbers` 的向量，其类型为 `Vec<T>`，那么就只能推送 `T` 类型的元素。在推送之前，通过使用 `into` 可以让编译器将 `n1` 和 `n2` 转换为 `T` 类型。然而，编译器并不知道 `T` 的具体类型，所以需要对该类型进行注释。
+`u8` 和 `i8` 类型可以转换为 `i16`、`i32`、`i64` 等类型。让我们来选择动态数组的泛型类型吧。 """
+
+[[exercises]]
+name = "generics2"
+dir = "14_generics"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
