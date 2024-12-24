@@ -428,3 +428,49 @@ test = false
 hint = """编译器提示发生了部分所有权的转移，让我们看看编译器的错误提示吧。
 按照编译器的指示进行修正后，请阅读相关文档:
 https://doc.rust-lang.org/std/keyword.ref.html"""
+
+[[exercises]]
+name = "errors1"
+dir = "13_error_handling"
+hint = """`generate_nametag_text` 函数不应该返回 `Option` 类型，而应该返回带有 `Ok` 或 `Err` 类型的 `Result` 类型。
+要进行此更改，需要以下操作:
+- 将函数签名的返回值设置为 `Result<String, String>`。
+- 将返回 `Some()` 的函数体部分更改为返回 `Ok()`。
+- 将返回 `None` 的地方更改为返回 `Err(错误消息)`。 """
+
+[[exercises]]
+name = "errors2"
+dir = "13_error_handling"
+hint = """处理这个问题的方法中，有一种是在 `item_quantity` 上使用 `match` 语句。另外，使用 `?` 运算符也可以实现类似效果。
+更多详细信息，请查看The Rust Book:
+https://doc.rust-lang.org/stable/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator"""
+
+[[exercises]]
+name = "errors3"
+dir = "13_error_handling"
+test = false
+hint = """如果其他函数可以返回 `Result` 类型，那么为什么只有 `main` 函数不能返回呢？实际上，`main` 函数返回 `Result<(), ErrorType>` 是一种常见的惯例。`Ok` 里面包含 `()` 是因为在没有问题的结果情况下，特别地不需要返回任何东西。"""
+
+[[exercises]]
+name = "errors4"
+dir = "13_error_handling"
+hint = """`PositiveNonzeroInteger::new` 总是会创建新的实例并返回值。然而，如果在实例创建时检查失败，它将返回 `Err`(如果没有问题则返回 `Ok`)。"""
+
+[[exercises]]
+name = "errors5"
+dir = "13_error_handling"
+test = false
+hint = """在 `main` 函数内生成了两种不同的 `Result` 类型，它们使用 `?` 来传递信息。那么应该如何限制 `main` 函数的返回值类型以同时允许这两种情况呢？
+在 `?` 运算符处理的背后，会对错误值调用 `From::from`，将其转换为装箱后的特征对象 `Box<dyn Error>`。由于所有错误都实现了 `Error` 特征，所以可以将各种不同的错误包含在一个 `Box` 对象中。
+关于boxing_errors，请参考The Rust Book:
+https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html 
+也可以阅读关于如何使用boxing_errors的 `?` 运算符:
+https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/boxing_errors.html"""
+
+[[exercises]]
+name = "errors6"
+dir = "13_error_handling"
+hint = """在这个练习中，我们将使用前一个练习中使用过的 `PositiveNonzeroInteger`。在 `TODO` 要求更改的行下面，有一个使用 `Result` 的 `map_err` 方法将一种类型的错误转换为另一种类型错误的示例。
+请在 `parse` 的 `Result` 上尝试同样的操作。使用 `?` 运算符可以提前 `return` 的位置。
+关于 `map_err`，请参考 The Rust Book:
+https://doc.rust-lang.org/std/result/enum.Result.html#method.map_err """
