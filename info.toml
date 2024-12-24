@@ -606,3 +606,28 @@ hint = """`std::iter::Iterator` trait的文档中记载了许多在此处有用�
 `count_collection_iterator`函数中的`collection`变量是`HashMap`的切片，为了使用迭代器的方法，需要将其转换为迭代器。
 `fold`方法在`count_collection_iterator`函数中很有用。
 如果想要进一步挑战，参考`Iterator`的文档，寻找一个比使用`fold`更能使代码简洁的其他方法吧！"""
+
+[[exercises]]
+name = "box1"
+dir = "19_smart_pointers"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "rc1"
+dir = "19_smart_pointers"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "arc1"
+dir = "19_smart_pointers"
+test = false
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "cow1"
+dir = "19_smart_pointers"
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
