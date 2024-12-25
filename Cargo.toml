@@ -158,6 +158,12 @@ bin = [
   { name = "arc1_sol", path = "solutions/19_smart_pointers/arc1.rs" },
   { name = "cow1", path = "exercises/19_smart_pointers/cow1.rs" },
   { name = "cow1_sol", path = "solutions/19_smart_pointers/cow1.rs" },
+  { name = "threads1", path = "exercises/20_threads/threads1.rs" },
+  { name = "threads1_sol", path = "solutions/20_threads/threads1.rs" },
+  { name = "threads2", path = "exercises/20_threads/threads2.rs" },
+  { name = "threads2_sol", path = "solutions/20_threads/threads2.rs" },
+  { name = "threads3", path = "exercises/20_threads/threads3.rs" },
+  { name = "threads3_sol", path = "solutions/20_threads/threads3.rs" },
 ]
 
 [package]
