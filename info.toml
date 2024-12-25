@@ -682,3 +682,25 @@ test = false
 hint = """只需添加一个字符就能使其成功编译。宏的编写方式是通过在每个宏分支之间添加某些内容，从而能够将它们分隔开。至此，宏的练习就结束了，但这仅仅只是介绍了一小部分内容。
 若想获取更详细的宏知识，请阅读 The Little Book of Rust Macros:
 https://veykril.github.io/tlborm/"""
+
+[[exercises]]
+name = "clippy1"
+dir = "22_clippy"
+test = false
+hint = """Rust的标准库中存储了长精度和无限精度的数学常数:
+https://doc.rust-lang.org/stable/std/f32/consts/index.html 
+在某些情况下，可能想要使用某种数学常数的自定义近似值，但Clippy会将不准确的数学常数视为潜在错误的原因。请参考编译输出中的Clippy警告，从 `std::f32::consts` 中使用合适的替换常数。"""
+
+[[exercises]]
+name = "clippy2"
+dir = "22_clippy"
+test = false
+hint = """针对`Option`类型的`for`循环可以用`if-let`语句来表示。"""
+skip_check_unsolved = true
+
+[[exercises]]
+name = "clippy3"
+dir = "22_clippy"
+test = false
+hint = """此练习还暂无提示哦
+(需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
