@@ -655,3 +655,30 @@ dir = "20_threads"
 hint = """作为处理线程间并发执行的另一种方法，存在使用 mpc(多生产者、单消费者通道)通道进行通信的方式。只要有发送端和接收端，就可以在某个线程中发送值，并在另一个线程中接收该值。通过使用`clone`来创建原始接收端的副本，能够创建多个生产者。
 The Rust Book的相关章节:
 https://doc.rust-lang.org/stable/book/ch16-02-message-passing.html """
+
+[[exercises]]
+name = "macros1"
+dir = "21_macros"
+test = false
+hint = """在Rust中调用宏时，与普通的函数调用相比，需要添加特殊的字符。"""
+
+[[exercises]]
+name = "macros2"
+dir = "21_macros"
+test = false
+hint = """Rust中的宏并不完全遵循与编写普通函数相同的规则。
+“宏的定义位置”以及“宏的使用位置的先后顺序”很重要。"""
+
+[[exercises]]
+name = "macros3"
+dir = "21_macros"
+test = false
+hint = """要在模块外部使用宏，需要对模块进行特殊处理，将宏导出到父目录中。"""
+
+[[exercises]]
+name = "macros4"
+dir = "21_macros"
+test = false
+hint = """只需添加一个字符就能使其成功编译。宏的编写方式是通过在每个宏分支之间添加某些内容，从而能够将它们分隔开。至此，宏的练习就结束了，但这仅仅只是介绍了一小部分内容。
+若想获取更详细的宏知识，请阅读 The Little Book of Rust Macros:
+https://veykril.github.io/tlborm/"""
