@@ -704,3 +704,34 @@ dir = "22_clippy"
 test = false
 hint = """此练习还暂无提示哦
 (需要点提示? 提出问题到 https://github.com/SandmeyerX/rustlings-zh-cn/issues)"""
+
+[[exercises]]
+name = "using_as"
+dir = "23_conversions"
+hint = """请使用`as`运算符将`average`函数最后一行的操作数之一更改为期望的返回值类型。"""
+
+[[exercises]]
+name = "from_into"
+dir = "23_conversions"
+hint = """请按照在`From`之前刚刚实现的步骤来进行操作。"""
+
+[[exercises]]
+name = "from_str"
+dir = "23_conversions"
+hint = """在`FromStr`的实现中，需要指定`Person`对象并返回`Ok`，如果字符串不符合要求则指定相应错误并返回`Err`。这与 `from_into` 的练习大致相同，不过这里是返回错误而不是返回默认值。
+另一个提示:
+可以使用 `Result` 的 `map_err` 方法以及在闭包中使用它来包装从 `parse::<u8>` 产生的错误。
+还有一个提示:
+如果想要利用 `?` 运算符来传播错误，请参考以下内容:
+https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html """
+
+[[exercises]]
+name = "try_from_into"
+dir = "23_conversions"
+hint = """标准库中是否存在既能进行`TryFrom`实现所需的整数转换，又能进行输入范围检查的东西呢?
+挑战: 能否针对很多整数类型通用地实现 `TryFrom` 呢? """
+
+[[exercises]]
+name = "as_ref_mut"
+dir = "23_conversions"
+hint = """让我们将`AsRef<str>`或`AsMut<u32>`作为绑定到函数的特性来添加吧。"""
